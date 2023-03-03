@@ -1,0 +1,70 @@
+<!--En esta pagina la propia persona puede ver o editar su pagina-->
+
+<html>
+    <head>
+        <title>Contacto</title>
+        <meta charset="UTF-8">
+       
+
+    </head>
+    <body>
+
+<form ACTION="Contacto.php" METHOD="POST">
+
+
+        <div class="contenido">
+                <div><h1>Formularios JavaScript</h1></div>
+                <hr> 
+                <br>   
+                <div>
+                    <label class="upcontrols" >Nombre</label>
+                    <br>
+                    <input class="controls" type="text" name="nombre" placeholder="Teclea tu nombre">
+                </div>
+                <hr>
+                <br>
+                <div>
+                    <label class="upcontrols">Telefono</label>
+                    <br>
+                    <input class="controls" type="text" name="telefono" placeholder="Teclea tu numero" onfocusout="validarTelefono()">
+                </div>
+                <hr>
+                <br>
+                <div>
+                    <label class="upcontrols">Correo</label>
+                    <input class="controls" onfocusout="validarCorreo()" type="form-control" name="correo" placeholder="Teclea tu correo">
+                </div>
+                <hr>
+                <br>
+                <div>
+                    <label class="upcontrols">Comentario</label>
+                    <input class="controls" type="text" name="comentario" placeholder="Teclea tu comentario">
+                </div>
+                <hr>
+            
+
+                <div>
+                    <input type="submit" class="botons" name="insertar" onclick="registra()">  
+                </div>
+                <hr> 
+                <div id="alumnos">
+
+                </div>
+        </div>
+
+        <div class="anuncios" align="right">
+            <div id="flotante1">
+                <a href="javascript:cerrar1();">
+                    <img src="img/anuncio6.jpg" >
+                </a>
+            </div>
+            <div id="flotante2">
+                <a href="javascript:cerrar2();">
+                    <img src="img/anuncio1.jpg">
+                </a>
+            </div>
+        </div>
+  </form>
+    </body>
+
+</html>
